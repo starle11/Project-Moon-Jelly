@@ -2,6 +2,7 @@
 Software engineering project
 
 Here's the link for accessing the project setup on my account:
+https://unixweb.kutztown.edu/~jcraf273/Prototype/homepage.php 
 
 Don't forget that mylib.php is setup for my mysql database, if you want to try it on yours you need to redo it for your mysql account.
 Here's the mysql commands for setting up the tables in the database in mysql:
