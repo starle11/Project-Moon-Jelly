@@ -135,7 +135,7 @@ session_start();
             echo '<button class="logout-button" onclick="logout()">Logout</button>';
         } else {
             echo '<button onclick="window.location.href=\'login-form.php\'">Login</button>';
-            echo '<button onclick="window.location.href=\'signupDB.php\'">Sign Up</button>';
+            echo '<button onclick="window.location.href=\'signup-form.php\'">Sign Up</button>';
         }
         ?>
     </div>
