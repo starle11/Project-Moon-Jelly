@@ -188,7 +188,7 @@ session_start();
     function logout() {
         session_unset();
         session_destroy();
-        window.location.href = 'login-form.php';
+        window.location.href = 'homepage.php';
     }
 </script>
 
