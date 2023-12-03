@@ -1,4 +1,18 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     signupDB.php
+Purpose:       backend to sign up a new user
+Resources:     - 
+*/
+
 session_start();
 
 /*POST Information From Signup Form*/

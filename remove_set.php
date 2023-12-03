@@ -1,4 +1,18 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     remove_set.php
+Purpose:       removes a set from the database
+Resources:     - 
+*/
+
 session_start();
 include('mylib.php');
 db_connect();
@@ -14,8 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $removeSetId = $_POST['remove_set_id'];
     $username = $_SESSION['user_id']; // Assuming 'user_id' in session is the username
 
-    // Assuming you have a table named 'sets' with columns 'set_id', 'set_name', and 'user_id'
-    // Also assuming you have a table named 'users' with columns 'user_id' and 'username'
     $query = "DELETE FROM sets 
               WHERE set_id = $removeSetId AND user_id = (SELECT user_id FROM users WHERE username = '$username')";
 

@@ -1,4 +1,18 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     loginDB.php
+Purpose:       backend to log a user into the website
+Resources:     - 
+*/
+
 session_start();
 
 /*POST Information From Login Form*/
@@ -49,61 +63,7 @@ if ($errmsg != NULL) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Confirmation</title>
-    <style>
-        /* Your styles for loginDB.php go here */
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #EE8194;
-            color: #fff;
-            padding: 10px;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header-buttons {
-            display: flex;
-        }
-
-        .header-buttons button {
-            background-color: #fff;
-            color: #EE8194;
-            border: none;
-            padding: 8px 16px;
-            margin-right: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .header-buttons button:hover {
-            background-color: #ddd;
-        }
-
-        .content-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #EE8194;
-        }
-
-        .error-message {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>

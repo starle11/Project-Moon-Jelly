@@ -1,4 +1,18 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     multiple_choice_quiz.php
+Purpose:       displays a quiz in multiple choice
+Resources:     - 
+*/
+
 include('mylib.php');
 session_start();
 
@@ -53,69 +67,7 @@ $db->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Jelly - Multiple Choice Quiz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #EE8194;
-            color: #fff;
-            padding: 20px;
-            text-align: left;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        #moon-jelly a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .quiz-container {
-            width: 600px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .select-dropdown {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .question {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .answer {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input[type="radio"] {
-            margin-right: 5px;
-        }
-
-        button {
-            background-color: #EE8194;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -139,7 +91,8 @@ $db->close();
         echo '<input type="submit" value="Start Quiz">';
         echo '</form>';
     }
-
+	
+	//displays flashcards
     if (isset($flashcard) && isset($flashcard2)) {
         $question = $flashcard['front_content'];
         $correctAnswer = $flashcard['back_content'];
@@ -158,8 +111,8 @@ $db->close();
 </div>
 
 <script>
+	//submits the quiz
     function submitQuiz() {
-        // You can implement the logic to process the selected answer here
         window.location.href = 'multiple_choice_quiz_answers.php';
     }
 </script>
