@@ -1,4 +1,17 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     flashcardsedit.php
+Purpose:       edits the flashcards
+Resources:     - 
+*/
 include('mylib.php');
 session_start();
 
@@ -62,92 +75,7 @@ $db->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Jelly - Edit Flashcards</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #EE8194;
-            color: #fff;
-            padding: 20px;
-            text-align: left;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        #moon-jelly a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        #moon-jelly {
-            margin-right: auto;
-        }
-
-        #flashcard-container {
-            width: 600px;
-            margin: 20px auto;
-        }
-
-        .flashcard {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        .form-container {
-            width: 600px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            margin-bottom: 20px;
-        }
-
-        button {
-            background-color: #EE8194;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            margin-right: 10px; /* Add margin-right to create spacing between buttons */
-        }
-
-        .remove-button {
-            background-color: #EE8194; /* Same color as the edit button */
-        }
-	.homepage-btn {
-            background-color: #EE8194;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 

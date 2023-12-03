@@ -1,4 +1,18 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     flashcards.php
+Purpose:       displays the flashcards
+Resources:     - 
+*/
+
 session_start();
 
 // Check if the user_id is passed in the URL
@@ -22,99 +36,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Jelly - Flashcards</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #EE8194;
-            color: #fff;
-            padding: 20px;
-            text-align: left;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        #moon-jelly a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        #moon-jelly {
-            margin-right: auto;
-        }
-
-        #flashcard-container {
-            width: 600px;
-            height: 300px;
-            perspective: 1000px;
-            margin: 100px auto;
-        }
-
-        #flashcard {
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition: transform 0.3s ease-in-out;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            cursor: pointer;
-            background-color: #fff; /* Set card background color to white */
-            outline: 2px solid #ccc; /* Grey outline */
-        }
-
-        #flashcard .front,
-        #flashcard .back {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            font-size: 24px;
-            position: absolute;
-            backface-visibility: hidden;
-            width: 100%;
-            height: 100%;
-            padding: 20px;
-            transform-origin: center center;
-        }
-
-        #flashcard .front {
-            background-color: #fff; /* Set card background color to white */
-            outline: 2px solid #ccc; /* Grey outline */
-            color: #000000;
-            transform: rotateX(0deg);
-        }
-
-        #flashcard .back {
-            background-color: #fff; /* Set card background color to white */
-            outline: 2px solid #ccc; /* Grey outline */
-            color: #000000;
-            transform: rotateX(180deg);
-        }
-
-        #flip-btn-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .btn {
-            background-color: #EE8194;
-            color: #fff;
-            border: none;
-            padding: 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            margin: 0 10px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 

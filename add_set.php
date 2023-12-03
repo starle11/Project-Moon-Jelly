@@ -1,11 +1,24 @@
 <?php
+/*
+Group Name:    Moon Jelly
+Name(s):       Joseph Nolan/Julia Craft/Katherine Ringeisen/Raymond Mateo
+Major:         Software Development/CSC IT
+Creation Date: Nov. 27, 2023
+Due Date:      Dec. 6, 2023
+Course:        CSC 354-020 - Fall 2023
+Professor:     Dr. Tauqeer Hussain
+SE Phase II:   Designing Prototype
+File Name:     add_set.php
+Purpose:       adds a set to the directory
+Resources:     - 
+*/
 session_start();
 include('mylib.php');
 db_connect();
 
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
-    // Redirect or handle accordingly (e.g., user not logged in)
+    // Redirect or handle accordingly
     header("Location: login-form.php");
     exit();
 }
@@ -14,8 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $newSetName = $_POST['new_set_name'];
     $username = $_SESSION['user_id']; // Assuming 'user_id' in session is the username
 
-    // Assuming you have a table named 'sets' with columns 'set_name' and 'user_id'
-    // Also assuming you have a table named 'users' with columns 'user_id' and 'username'
     $query = "INSERT INTO sets (set_name, user_id) 
               SELECT '$newSetName', users.user_id 
               FROM users 
