@@ -146,7 +146,7 @@ session_start();
     <div class="selection-container">
         <?php
         $selections = [
-            ['id' => 1, 'title' => 'Flashcards', 'description' => 'Create your own unique flashcards.', 'link' => 'flashcards.php'],
+            ['id' => 1, 'title' => 'Flashcards', 'description' => 'Create your own unique flashcards.', 'link' => 'flashcardssets.php'],
             ['id' => 2, 'title' => 'Practice Quizzes', 'description' => 'Take one of our Practice Quizzes.', 'link' => 'practicequizzes.php'],
         ];
 
