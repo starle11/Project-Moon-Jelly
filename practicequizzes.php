@@ -69,8 +69,6 @@ session_start();
 <div class="quiz-links-container">
     <h2>Practice Quizzes</h2>
     <a href="multiple_choice_quiz.php" class="quiz-link">Multiple Choice Quiz</a>
-    <a href="#" class="quiz-link" onclick="showComingSoonPopup('Fill in the Blank Quiz')">Fill in the Blank Quiz</a>
-    <a href="#" class="quiz-link" onclick="showComingSoonPopup('Spelling Quiz')">Spelling Quiz</a>
 </div>
 
 <script>
