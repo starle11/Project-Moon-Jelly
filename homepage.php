@@ -161,6 +161,8 @@ session_start();
         $selections = [
             ['id' => 1, 'title' => 'Flashcards', 'description' => 'Create your own unique flashcards.', 'link' => 'flashcards.php'],
             ['id' => 2, 'title' => 'Practice Quizzes', 'description' => 'Take one of our Practice Quizzes.', 'link' => 'practicequizzes.php'],
+	    ['id' => 3, 'title' => 'Games', 'description' => 'Study and Play Games.', 'link' => 'matching_game.php'],
+	    ['id' => 4, 'title' => 'Timer', 'description' => 'Temporary Proof of Concept For Timer.', 'link' => 'timer.php'],
         ];
 
         foreach ($selections as $select) {
