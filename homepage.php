@@ -143,15 +143,17 @@ session_start();
 <header>
     <h1>Moon Jelly</h1>
     <div class="header-buttons">
-        <?php
-        if (isset($_SESSION['user_id'])) {
-            echo '<button class="logout-button" onclick="logout()">Logout</button>';
-        } else {
-            echo '<button onclick="window.location.href=\'login-form.php\'">Login</button>';
-            echo '<button onclick="window.location.href=\'signup-form.php\'">Sign Up</button>';
-        }
-        ?>
-    </div>
+    <?php
+    if (isset($_SESSION['user_id'])) {
+        echo '<button class="logout-button" id="logoutButton">Logout</button>';
+	echo '<button onclick="window.location.href=\'delete.php\'">Delete Account</button>';
+    } else {
+        echo '<button onclick="window.location.href=\'login-form.php\'">Login</button>';
+        echo '<button onclick="window.location.href=\'signup-form.php\'">Sign Up</button>';
+    }
+    ?>
+</div>
+
 </header>
 
 <section>
@@ -200,10 +202,16 @@ session_start();
         openPopup('confirmationPopup');
     }
 
-    function logout() {
+     function logout() {
         window.location.href = 'logout.php';
     }
+
 </script>
+
+<script>
+    document.getElementById('logoutButton').addEventListener('click', logout);
+</script>
+
 
 </body>
 </html>
