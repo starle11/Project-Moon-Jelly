@@ -142,6 +142,7 @@ session_start();
 
 <header>
     <h1>Moon Jelly</h1>
+    <img src="simpleJelly2.gif" alt="image" width="50" height="50"> 
     <div class="header-buttons">
     <?php
     if (isset($_SESSION['user_id'])) {
